@@ -41,6 +41,23 @@
     setMeta('link[rel="canonical"]', defaults.canonical);
   }
 
+  function addWebsiteSchema() {
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Tortoise People Project',
+    url: window.location.origin,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${window.location.origin}/search?q={search_term_string}`,
+      'query-input': 'required name=search_term_string'
+    }
+  });
+  document.head.appendChild(script);
+}
+
   applyDefaults();
 
   // Dynamic per‑page meta
