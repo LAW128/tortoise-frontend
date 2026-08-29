@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initImpactSlider();
     initNewsSlider();
     initScrollIndicator();
-    initNewsletter();
+    initNewsletter();  //
     initDropdowns();
     initAnimations();
 });
