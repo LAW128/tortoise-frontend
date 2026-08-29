@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – Tortoise People Project</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <!-- ==================== LOGIN SCREEN ==================== -->
+<div id="loginScreen" class="login-screen premium-login">
+  <div class="login-wrapper">
+    <!-- Left decorative panel -->
+    <div class="login-brand">
+      <div class="brand-content">
+        <img src="images/logo.png" alt="Logo" class="brand-logo" />
+        <h1>Tortoise People Project</h1>
+        <p>Admin Command Center</p>
+        <div class="brand-shape"></div>
+      </div>
+    </div>
+
+    <!-- Right forms panel -->
+    <div class="login-forms">
+      <div class="form-card" id="loginCard">
+        <h2>Welcome back</h2>
+        <p>Sign in to your admin panel</p>
+        <form id="loginForm">
+          <div class="float-group">
+            <input type="text" id="username" required />
+            <label for="username">Username</label>
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="float-group">
+            <input type="password" id="password" required />
+            <label for="password">Password</label>
+            <i class="fas fa-lock"></i>
+          </div>
+          <button type="submit" class="btn-login">Sign In</button>
+        </form>
+        <p id="loginError" class="error-message"></p>
+        <a href="#" id="forgotPasswordLink" class="forgot-link">Forgot your password?</a>
+      </div>
+
+      <!-- Forgot Password Step 1 -->
+      <div class="form-card" id="forgotEmailCard" style="display: none;">
+        <h2>Reset Password</h2>
+        <p>Enter your email to receive an OTP</p>
+        <form id="forgotEmailForm">
+          <div class="float-group">
+            <input type="email" id="resetEmail" required />
+            <label for="resetEmail">Email address</label>
+            <i class="fas fa-envelope"></i>
+          </div>
+          <button type="submit" class="btn-login">Send OTP</button>
+        </form>
+        <p id="forgotEmailError" class="error-message"></p>
+        <a href="#" class="forgot-link back-to-login">Back to login</a>
+      </div>
+
+      <!-- Forgot Password Step 2 -->
+      <div class="form-card" id="otpCard" style="display: none;">
+        <h2>Verify OTP</h2>
+        <p>A 4‑digit code was sent to your email</p>
+        <form id="otpForm">
+          <div class="float-group">
+            <input type="password" id="otpInput" maxlength="4" required />
+            <label for="otpInput">Enter OTP</label>
+            <i class="fas fa-key"></i>
+          </div>
+          <button type="submit" class="btn-login">Verify OTP</button>
+        </form>
+        <p id="otpError" class="error-message"></p>
+        <a href="#" class="forgot-link back-to-login">Back to login</a>
+      </div>
+
+      <!-- Forgot Password Step 3 -->
+      <div class="form-card" id="newPasswordCard" style="display: none;">
+        <h2>Create New Password</h2>
+        <p>Choose a strong, memorable password</p>
+        <form id="newPasswordForm">
+          <div class="float-group">
+            <input type="password" id="newPassword" required />
+            <label for="newPassword">New password</label>
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="float-group">
+            <input type="password" id="confirmPassword" required />
+            <label for="confirmPassword">Confirm password</label>
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <button type="submit" class="btn-login">Reset Password</button>
+        </form>
+        <p id="newPasswordError" class="error-message"></p>
+        <a href="#" class="forgot-link back-to-login">Back to login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" class="dashboard" style="display: none;">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="images/logo.png" alt="Logo">
+        <span>Admin Panel</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" data-section="dashboard" class="nav-item active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="#" data-section="hero" class="nav-item"><i class="fas fa-image"></i> Manage Hero Sections</a>
+        <a href="#" data-section="highlights" class="nav-item"><i class="fas fa-star"></i> Manage Highlights</a>
+        <a href="#" data-section="news" class="nav-item"><i class="fas fa-newspaper"></i> Manage News</a>
+        <a href="#" data-section="partners" class="nav-item"><i class="fas fa-handshake"></i> Manage Partners</a>
+        <a href="#" data-section="subscribers" class="nav-item">
+        <i class="fas fa-envelope"></i> View Subscribers
+       <span class="nav-badge" id="subscriberBadge">0</span>
+       </a>
+        <a href="#" data-section="settings" class="nav-item"><i class="fas fa-cog"></i> Site Settings</a>
+        <a href="#" id="logoutBtn" class="nav-item logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+       <button class="sidebar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+       <h2 id="sectionTitle">Dashboard</h2>
+       <div class="admin-profile"><i class="fas fa-user-circle"></i><span>Admin</span></div>
+     </header>
+      <div class="content-area" id="contentArea">
+        <!-- content loaded by JS -->
+      </div>
+    </main>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

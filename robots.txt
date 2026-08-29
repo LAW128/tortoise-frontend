@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin.html
+Disallow: /js/admin.js
+Disallow: /css/admin.css
+
+Sitemap: http://localhost:5000/sitemap.xml
