@@ -1,47 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.yourdomain.com/index.html</loc>
+    <loc>https:https://https://tortoise-project.onrender.com/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/about.html</loc>
+    <loc>https://tortoise-project.onrender.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/strategy.html</loc>
+    <loc>https://tortoise-project.onrender.com/strategy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/resources.html</loc>
+    <loc>https://tortoise-project.onrender.com/resources.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/get-involved.html</loc>
+    <loc>https://tortoise-project.onrender.com/get-involved.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/Education_Awareness.html</loc>
+    <loc>https://tortoise-project.onrender.com/Education_Awareness.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/Community_Resources.html</loc>
+    <loc>https://tortoise-project.onrender.com/Community_Resources.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/Restoration_Protection.html</loc>
+    <loc>https://tortoise-project.onrender.com/Restoration_Protection.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/Nature_Friendly.html</loc>
+    <loc>https://tortoise-project.onrender.com/Nature_Friendly.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://tortoise-project.onrender.com/admin.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
